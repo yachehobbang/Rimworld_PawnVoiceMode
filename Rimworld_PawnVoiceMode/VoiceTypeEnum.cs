@@ -1,7 +1,6 @@
-﻿namespace PawnVoice
+﻿namespace PawnVoice;
+
+enum VoiceTypeEnum
 {
-	enum VoiceTypeEnum
-	{
-		Draft,
-	}
+	Draft,
 }
