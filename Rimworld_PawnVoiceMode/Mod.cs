@@ -26,6 +26,6 @@ namespace PawnVoice
 
 		public static void Error(string message) => Verse.Log.Error(PrefixMessage(message));
 
-		private static string PrefixMessage(string message) => $"[PawnVoice v{Version}] " + message;
+		private static string PrefixMessage(string message) => $"[{Name} v{Version}] " + message;
 	}
 }
