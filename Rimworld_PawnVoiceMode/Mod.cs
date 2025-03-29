@@ -13,11 +13,12 @@ public sealed class Mod : Verse.Mod
 	public Mod(ModContentPack content)
 	  : base(content)
 	{
-		Mod.Instance = this;
+		Instance = this;
 		var harmony = new Harmony("PawnVoice");
+		Pawn_DraftController_GetGizmos_Patch.Patch(harmony);
 		harmony.PatchAll();
 
-		Mod.Log("Initialized");
+		Log("Initialized");
 	}
 
 	public static void Log(string message) => Verse.Log.Message(PrefixMessage(message));

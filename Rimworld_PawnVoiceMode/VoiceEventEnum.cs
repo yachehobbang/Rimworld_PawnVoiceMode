@@ -1,6 +1,6 @@
 ﻿namespace PawnVoice;
 
-enum VoiceTypeEnum
+enum VoiceEventEnum
 {
 	Draft,
 }
